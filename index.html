@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Predicting Emotional Intensity in Political Debates via Non-verbal Signals</title>
+</head>
+<body>
+
+  <h1 class='heading' style="margin-top: 20px;">Predicting Emotional Intensity in Political Debates via Non-verbal Signals</h1>
+  <p><span>Authors:</span> Jeewoo Yoon, Jinyoung Han, Erik Bucy, and Jungseock Joo</p>
+  <p><span>Abstract:</span> Non-verbal communications of political leaders have received great attention. In particular, scholars have studied relationships between the emotional intensity of politicians and voters' evaluation. However, most prior works measured the emotional intensity via vocal pitch, which may not capture the comprehensive information of one’s emotional intensity. To address this issue, We develop a multimodal deep-learning model that utilizes voice, face, and gesture to predict the perceived emotional intensity of a candidate from a video clip. We collect a dataset of political debate videos from the 2020 Democratic presidential primaries, and train the proposed model with randomly sampled clips from the debate videos. By applying the proposed model to 23 candidates in 11 debate videos, we show that the standard deviation of the perceived emotional intensity is positively correlated with the changes in candidates’ favorability in public polls.</p>
+  
+  <h2 class='heading'>Emotional Intensity Prediction Results</h2>
+
+  <p>Here, we present the perceived emotional intensity prediction results for some of the candidates in our testset.</p>
+  <p>Note that we rescaled the annotation to 0~1.</p>
+  <!-- <br> -->
+  <h3>Joe Biden</h3>
+  <div class="box">
+    <div class="content">
+      <h4>Annotation: 0.33 | Prediction: <span class="red">0.37</span></h4>
+      <video width="300px" controls src="videos/181_Debate4_00:04:25_00:04:30.mp4"></video>  
+    </div>
+    <div class="content">
+      <h4>Annotation: 0.80 | Prediction: <span class="red">0.71</span></h4>
+      <video width="300px" controls src="videos/194_Debate8_2_00:37:27_00:37:32.mp4"></video>
+    </div>
+  </div>
+  
+  <br>
+
+  <h3>Tulsi Gabbard</h3>
+  <div class="box">
+    <div class="content">
+      <h4>Annotation: 0.35 | Prediction: <span class="red">0.38</span></h4>
+      <video width="300px" controls src="videos/427_Debate2Night2_3_00:02:21_00:02:26.mp4"></video>  
+    </div>
+    <div class="content">
+      <h4>Annotation: 0.65 | Prediction: <span class="red">0.53</span></h4>
+      <video width="300px" controls src="videos/546_Debate2Night2_4_00:07:26_00:07:31.mp4"></video>
+    </div>
+  </div>
+  
+  <br>
+
+  <h3>Tom Steyer</h3>
+  <div class="box">
+    <div class="content">
+      <h4>Annotation: 0.40 | Prediction: <span class="red">0.45</span></h4>
+      <video width="300px" controls src="videos/514_Debate4_01:26:46_01:26:51.mp4"></video>  
+    </div>
+    <div class="content">
+      <h4>Annotation: 0.75 | Prediction: <span class="red">0.68</span></h4>
+      <video width="300px" controls src="videos/517_Debate8_2_01:18:21_01:18:26.mp4"></video>
+    </div>
+  </div>
+  
+  <br>
+
+  <h3>Kamala Harris</h3>
+  <div class="box">
+    <div class="content">
+      <h4>Annotation: 0.40 | Prediction: <span class="red">0.36</span></h4>
+      <video width="300px" controls src="videos/271_Debate2Night2_1_00:14:51_00:14:56.mp4"></video>  
+    </div>
+    <div class="content">
+      <h4>Annotation: 0.65 | Prediction: <span class="red">0.57</span></h4>
+      <video width="300px" controls src="videos/342_Debate3_1_00:12:05_00:12:10.mp4"></video>
+    </div>
+  </div>
+
+  <br>
+  
+  <h3>Julian Castro</h3>
+  <div class="box">
+    <div class="content">
+      <h4>Annotation: 0.40 | Prediction: <span class="red">0.41</span></h4>
+      <video width="300px" controls src="videos/252_Debate2Night2_4_00:08:17_00:08:22.mp4"></video>
+    </div>
+    <div class="content">
+      <h4>Annotation: 0.65 | Prediction: <span class="red">0.64</span></h4>
+      <video width="300px" controls src="videos/300_Debate2Night2_1_00:08:24_00:08:29.mp4"></video>  
+    </div>
+  </div>
+  
+  <br>
+
+  <h3>Marianne Williamson</h3>
+  <div class="box">
+    <div class="content">
+      <h4>Annotation: 0.40 | Prediction: <span class="red">0.38</span></h4>
+      <video width="300px" controls src="videos/378_Debate2Night1_3_00:09:15_00:09:20.mp4"></video>
+    </div>
+    <div class="content">
+      <h4>Annotation: 0.75 | Prediction: <span class="red">0.68</span></h4>
+      <video width="300px" controls src="videos/394_Debate2Night1_3_00:09:49_00:09:54.mp4"></video>  
+    </div>
+  </div>
+
+  <br>
+
+  <h3>Cory Booker</h3>
+  <div class="box">
+    <div class="content">
+      <h4>Annotation: 0.53 | Prediction: <span class="red">0.57</span></h4>
+      <video width="300px" controls src="videos/116_Debate3_3_00:11:56_00:12:01.mp4"></video>
+    </div>
+    <div class="content">
+      <h4>Annotation: 0.85 | Prediction: <span class="red">0.88</span></h4>
+      <video width="300px" controls src="videos/142_Debate3_3_00:13:26_00:13:31.mp4"></video>  
+    </div>
+  </div>
+
+  <br>
+
+  <div class="footer">
+    <hr>
+    <a href= "http://dsail.skku.edu">Data Science & Artificial Intelligence Laboratory (DSAIL) @ Sungkyunkwan University</a>
+  </div>
+  
+
+</body>
+</html>
